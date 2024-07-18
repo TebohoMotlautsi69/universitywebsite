@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://images.pexels.com/photos/247823/pexels-photo-247823.jpeg?cs=srgb&dl=pexels-pixabay-247823.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font: 13px
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.Introduct{
+    display: inline-block;
+    padding: 130px;
+    text-align: center;
+    margin-left: 130px;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.Introduct h1{
+    color: white;
+    padding: 5%;
+    text-align: center;
+}
+.Introduct p{
+    padding: 0% 0% 5%;
+    color: white;
+}
+.Introduct a{
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    width: 20%;
+}
+.Introduct a:hover{
+    border: 1px solid #f44336;
+    background-color: #f44336;
+    transition: 0.5s;
+}
+.degree{
+    text-align: center;
+    margin: auto; 
+    width: 80%;   
+    padding-top: 40px;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+.degree-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.degree-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.campus{
+    text-align: center;
+    width: 80%;
+    padding-top: 50px;
+    margin: auto;
+}
+.campus-row{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+
+}
+.campus-col{
+    flex-basis: 32%;
+    background:#777;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background-size: auto;
+    height: 620px;
+}
+.campus-col img{
+    width: 100%;
+    height: 620px;
+}
+.campus-coL label{
+    text-align: center;
+}
+.layer{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(255, 131, 131, 0.7)
+}
+.layer h3{
+    font-size: 26px;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    font-weight: 500;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+.footers{
+    padding: 30px;
+    background-color: #f44336;
+    text-align: center;
+
+}
+.footers h3{
+    color: #fff;
+}
+.footers p{
+    color: #fff;
+}
+.course_header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://img.freepik.com/premium-photo/stack-books-desk-back-school_839035-416415.jpg?w=1060);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.Welcome{
+    text-align: center;
+    color: #fff;
+    padding-top: 150px;
+}
+.course_row{
+    display: flex;
+    margin: 20px;
+    padding-left: 10%;
+    justify-content: space-between;
+}
+.course_col{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    width: 40%;
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+.course_col img{
+    border-radius: 10px;
+    top: 0%;
+    height: 290px;
+    width: 530px;
+}
